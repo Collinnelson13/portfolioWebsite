@@ -9,43 +9,196 @@
       content="Hello! It's your freindly neighborhood Coder-Man here! Watch thi..."
     />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/946c4ba878.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <div class="topScreen">
-      <div id="legoCenterpiece">
+    <div class="topScreen" id="topScreen">
+      <div id="centerDisplay">
         <p>
           Hello, I'm <span>Collin Nelson</span>,<br />
           full-stack web developer.
         </p>
-        <img src="/images/pinklego.png" alt="Lego Blocks" />
+        <video autoplay src="videos/hexagon video.mp4"></video>
       </div>
       <div>
-        <a href="#bottom" id="buttonLink">
+        <a href="#screen2Navbar" class="buttonLink">
           <button id="myWorkButton">
-            <p>View my work ➜</p>
+            <p>View my work <i class="fa-solid fa-arrow-right-long"></i></p>
           </button>
         </a>
       </div>
     </div>
-    <div class="screen2">
+    <div class="screen2" id="screen2">
       <nav id="screen2Navbar">
-        <div class="navbarItem">HOME</div>
-        <div class="navbarItem">ABOUT</div>
-        <div class="navbarItem">PORTFOLIO</div>
-        <div class="navbarItem">CONTACT</div>
+        <div class="navbarItem">
+          <a href="#topScreen" class="buttonLink">HOME</a>
+        </div>
+        <div class="navbarItem">
+          <a href="#screen2" class="buttonLink">ABOUT</a>
+        </div>
+        <div class="navbarItem">
+          <a href="#myWork" class="buttonLink">PORTFOLIO</a>
+        </div>
+        <div class="navbarItem">
+          <a href="#contact" class="buttonLink">CONTACT</a>
+        </div>
       </nav>
-      <div class="badgeRow">
-        <div class="hex"></div>
-        <div class="hex"></div>
-        <div class="hex"></div>
+      <h1 id="about">About</h1>
+      <section class="badgeRow">
+        <div class="badgeBox">
+          <div class="hexBadge">
+            <img src="images/hex badge.png" />
+            <div class="hexBadgeOverlay">
+              <i class="fa-solid fa-jet-fighter"></i>
+            </div>
+          </div>
+          <span>Fast</span>
+          <p>Work geared toward performance</p>
+        </div>
+        <div class="badgeBox">
+          <div class="hexBadge">
+            <img src="images/hex badge.png" />
+            <div class="hexBadgeOverlay">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+          </div>
+          <span>Intuitive</span>
+          <p>Simple, easy to use, user-friendly experience</p>
+        </div>
+        <div class="badgeBox">
+          <div class="hexBadge">
+            <img src="images/hex badge.png" />
+            <div class="hexBadgeOverlay">
+              <i class="fa-solid fa-palette"></i>
+            </div>
+          </div>
+          <span>Creative</span>
+          <p>Out of "the box" solutions</p>
+        </div>
+        <div class="badgeBox">
+          <div class="hexBadge">
+            <img src="images/hex badge.png" />
+            <div class="hexBadgeOverlay"><i class="fa-solid fa-check"></i></div>
+          </div>
+          <span>Reliable</span>
+          <p>Consistent, clean code</p>
+        </div>
+      </section>
+      <div id="aboutMeColumn">
+        <div id="aboutMeText">
+          <h2>The truth is, I am Iron Ma...</h2>
+          <hr width="100px" />
+          <p>
+            Sorry, got caught up in the moment. Not all heros wear capes, some
+            are web developers! <br /><br />
+            Listen, I'm uncomfortable with the word "Hero", but here I am!
+            <br /><br />
+            I'm an aspiring web developer with a knack for building things. My
+            work with Computers started with an interest in mobile game
+            development. I stumbled across the Unity Development Platform, and
+            by early 2018, published my first mobile game. In early 2020, I
+            began a study of JavaScript and HTML, and by the end of the year got
+            my foot into the Tech world working a support role, which revolved
+            heavily around SQL database management, and extended into minor HTML
+            and CSS work. By 2022, my array of skills had expanded to include
+          </p>
+        </div>
+        <div id="skills">
+          <div class="skillBox"><p>JavaScript</p></div>
+          <div class="skillBox"><p>HTML5 +</p></div>
+          <div class="skillBox"><p>CSS</p></div>
+          <div class="skillBox"><p>React</p></div>
+          <div class="skillBox"><p>Flutter</p></div>
+          <div class="skillBox"><p>Dart</p></div>
+          <div class="skillBox"><p>Node.js</p></div>
+          <div class="skillBox"><p>Express</p></div>
+          <div class="skillBox" id="myWork"><p>SQL</p></div>
+        </div>
       </div>
+
       <div class="slideIns">
-        <div class="slideBoxLeft">test1</div>
-        <div class="slideBoxRight">test2</div>
-        <div class="slideBoxLeft">test3</div>
+        <p id="myProjects">My Work</p>
+        <div class="slideBox">
+          <div class="slideBoxImgContainer">
+            <img src="images/foodTruckApp.png" />
+          </div>
+          <container class="slideBoxTextBox">
+            <h2>Mobile App Development</h2>
+            <p>
+              This is a current project (BETA) built with the Flutter Framework
+              that allows users to find local food trucks that are always on the
+              move!
+            </p>
+          </container>
+        </div>
+        <div class="slideBox">
+          <div class="slideBoxImgContainer">
+            <img src="images/car screenshot.png" />
+          </div>
+          <container class="slideBoxTextBox">
+            <h2>Webapps and pages</h2>
+            <p>
+              This is a functional demonstration of a web-app/game that lets the
+              user play as a sports car driving around town!
+            </p>
+          </container>
+        </div>
+        <div class="slideBox">
+          <div class="slideBoxImgContainer">
+            <img src="/images/comewithme.jpg" />
+          </div>
+          <container class="slideBoxTextBox">
+            <h2>Looking to build a webpage?</h2>
+            <p>
+              This webpage is 100% designed and programmed by me! I'd love for
+              your webpage to be the next beautiful build! Get in touch with me
+              below!
+            </p>
+            <i class="fa-solid fa-arrow-down"></i>
+          </container>
+        </div>
       </div>
-      <p id="bottom"></p>
     </div>
   </body>
+  <footer>
+    <p>Contact Me!</p>
+    <h2>Let's build Something together!</h2>
+    <form
+      id="contact"
+      action="https://formsubmit.co/collinnelson7x70@gmail.com"
+      method="POST"
+    >
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="contactInput"
+        placeholder="Name"
+        required
+      /><br />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="contactInput"
+        placeholder="Email"
+        required
+      /><br />
+
+      <textarea
+        name="message"
+        id="message"
+        class="messageInput"
+        placeholder="Your Message Here"
+      ></textarea
+      ><br />
+
+      <button type="submit">Send</button>
+    </form>
+  </footer>
 </html>

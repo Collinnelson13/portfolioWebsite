@@ -48,6 +48,10 @@ html {
   color: aliceblue;
 }
 
+/* #centerDisplay p:hover {
+  transform: scale(1.5);
+} */
+
 #centerDisplay span {
   color: rgb(221, 8, 122);
 }
@@ -131,7 +135,6 @@ html {
 .badgeBox {
   display: flex;
   flex-direction: column;
-  /* min-width: 25%; */
   min-width: 25%;
 }
 
@@ -209,6 +212,10 @@ html {
   margin-bottom: 5vh;
 }
 
+.skillBox:hover p {
+  transform: scale(1.5);
+}
+
 .skillBox {
   height: 30px;
   background-color: #2ca5fe;
@@ -232,6 +239,7 @@ html {
 }
 
 .skillBox p {
+  transition: 1s;
   color: aliceblue;
   font-weight: 800;
   font-size: 18px;

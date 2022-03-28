@@ -135,9 +135,8 @@ html {
   min-width: 25%;
 }
 
-.badgeBox:hover {
+.badgeBox:hover .hexBadge {
   transform: rotateY(360deg);
-  transition: all 2s;
 }
 
 .badgeBox span {
@@ -151,6 +150,7 @@ html {
 }
 
 .hexBadge {
+  transition: all 2s;
   align-self: center;
   justify-content: center;
   max-height: 120px;
